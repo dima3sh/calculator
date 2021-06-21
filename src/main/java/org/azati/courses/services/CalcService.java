@@ -10,7 +10,7 @@ public class CalcService{
         throw new UnsupportedOperationException("Type " + num1 + " and " + num2 + " are not supported");
     }
 
-    public static Number add(Integer num1, Number num2) {
+    private static Number add(Integer num1, Number num2) {
         if (num2 instanceof Integer) {
             return num1 + (Integer)num2;
         } else if (num2 instanceof Double) {
@@ -19,7 +19,7 @@ public class CalcService{
         throw new UnsupportedOperationException("Type " + num1 + " and " + num2 + " are not supported");
     }
 
-    public static Number add(Double num1, Number num2) {
+    private static Number add(Double num1, Number num2) {
         if (num2 instanceof Integer) {
             return num1 + (Integer)num2;
         } else if (num2 instanceof Double) {
